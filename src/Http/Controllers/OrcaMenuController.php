@@ -436,9 +436,9 @@ public function store(Request $request)
                 'reference_model' => [$menuName],
             ]);
 
-            return back()->with('success', "✅ Menu <b>{$menuName}</b> berhasil dibuat dengan preview gambar & PDF (50x50) tanpa ubah desain!");
+            return back()->with('success', "Menu <b>{$menuName}</b> berhasil dibuat dengan preview gambar & PDF (50x50) tanpa ubah desain!");
         } catch (\Throwable $e) {
-            return back()->with('error', '❌ Terjadi kesalahan!')
+            return back()->with('error', 'Terjadi kesalahan!')
                         ->with('exception_message', $e->getMessage());
         }
     }
@@ -484,7 +484,7 @@ public function store(Request $request)
         }
         $menu->delete();
         return redirect()->route('orca_menu.index')
-            ->with('success', "🧹 Menu <b>{$menuName}</b> dan semua file terkait berhasil dihapus, termasuk folder upload & route export!");
+            ->with('success', "Menu <b>{$menuName}</b> dan semua file terkait berhasil dihapus, termasuk folder upload & route export!");
     }
 
 }
