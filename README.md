@@ -1,6 +1,3 @@
-# ORCAFORGE
-Orca Forge – Platform Otomatisasi CRUD &amp; Form Builder Cerdas Tanpa Kode
-
 # 🧠 Orca Forge  
 ### **Make CRUD Faster, No Code Needed**
 
@@ -21,7 +18,7 @@ Orca Forge otomatis mengenali tipe data di tabel dan membuat input form yang ses
 Jika ada field file atau dokumen, sistem akan **otomatis menambahkan fitur preview** tanpa perlu konfigurasi manual.
 
 ### 🧩 Visual Page Builder (Drag & Drop)  
-Bangun tampilan form, dashboard, atau komponen lainnya dengan mudah menggunakan editor visual interaktif.
+Bangun tampilan form input dengan mudah menggunakan editor visual interaktif.
 
 ### 🔐 Role & Permission Management  
 Tambahkan kontrol akses hanya dengan satu klik.  
@@ -33,24 +30,6 @@ Tidak perlu membuka terminal, migrasi manual, atau phpMyAdmin lagi.
 
 ### ⚙️ Automasi Tanpa Batas  
 Setiap perubahan pada struktur tabel akan otomatis memperbarui form, tampilan, dan komponen terkait secara real-time.
-
----
-
-## 🧭 Keunggulan Bisnis
-
-Dengan Orca Forge, tim Anda dapat:
-
-- 🚀 **Memangkas waktu pengembangan hingga 80%**
-- 💰 **Menghemat biaya SDM developer**
-- ⏱️ **Mempercepat time-to-market** aplikasi internal maupun klien
-- 💼 **Meningkatkan produktivitas dan efisiensi workflow**
-
-Cocok untuk:
-- 🏢 Perusahaan yang butuh aplikasi data-driven dengan cepat  
-- 🚀 Startup yang ingin fokus pada bisnis, bukan teknis  
-- 👨‍💻 Developer yang ingin mempercepat prototyping dan deployment  
-
----
 
 ## 🌐 Kesimpulan
 
@@ -78,4 +57,3 @@ Bangun sistem Anda hari ini, **tanpa coding — hanya dengan ide dan data.**
 
 ### ✨ Dibangun untuk kecepatan, efisiensi, dan inovasi.  
 **Orca Forge — The Smarter Way to Build CRUD Applications.**
-
