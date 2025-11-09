@@ -75,7 +75,7 @@
         </a> -->
 
         @php
-            use App\Models\OrcaMenu;
+            use Orcaforge\Models\OrcaMenu;
             $menus = OrcaMenu::orderBy('nama_menu')->get();
         @endphp
 
