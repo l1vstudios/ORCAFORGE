@@ -19,7 +19,7 @@ class OrcaForgeServiceProvider extends ServiceProvider
                 $migrationPath => database_path('migrations'),
             ], 'orcaforge-migrations');
         }
-
+        //ORCAAAA
         $this->publishes([
             __DIR__ . '/../../resources/views' => resource_path('views/vendor/orcaforge'),
         ], 'orcaforge-views');
