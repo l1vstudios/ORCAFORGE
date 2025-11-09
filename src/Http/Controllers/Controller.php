@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Orcaforge\Http\Controllers;
 
 abstract class Controller
 {
