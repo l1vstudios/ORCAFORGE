@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="space-y-4">
-    @include('components.header')
+    @include('orcaforge::components.header')
 
     <div class="bg-white rounded-xl shadow-sm p-6">
         <div class="flex items-center justify-between mb-4">

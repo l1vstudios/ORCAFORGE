@@ -2,7 +2,7 @@
 @section('title', 'Tambah Berita')
 @section('content')
 <div class="space-y-6">
-    @include('components.header')
+    @include('orcaforge::components.header')
     <div class="bg-white border rounded-xl shadow-sm p-6 max-w-2xl mx-auto">
         <h3 class="text-lg font-semibold mb-4">Tambah Berita</h3>
         <form action="{{ route('orca_berita.update', $item->id) }}" method="POST" enctype="multipart/form-data" method="POST" enctype="multipart/form-data">

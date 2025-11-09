@@ -2,7 +2,7 @@
 @section('title', 'Berita - ORCAFORGE')
 @section('content')
 <div class="space-y-6">
-    @include('components.header')
+    @include('orcaforge::components.header')
 
     <div class="bg-white rounded-xl shadow-md p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between text-black gap-4">
         <div class="flex items-center gap-3">

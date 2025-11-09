@@ -198,7 +198,7 @@ public function store(Request $request)
               @section('title', '{$menuName} - ORCAFORGE')
               @section('content')
               <div class="space-y-6">
-                  @include('components.header')
+                  @include('orcaforge::components.header')
                   <div class="bg-white rounded-xl shadow-md p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between text-black gap-4">
                       <div class="flex items-center gap-3">
                           <div class="relative bg-black text-white p-2 rounded-lg flex items-center justify-center overflow-hidden border border-gray-700 shadow-sm">
@@ -372,7 +372,7 @@ public function store(Request $request)
             @section('title', 'Tambah {$menuName}')
             @section('content')
             <div class="space-y-6">
-                @include('components.header')
+                @include('orcaforge::components.header')
                 <div class="bg-white border rounded-xl shadow-sm p-6 max-w-2xl mx-auto">
                     <h3 class="text-lg font-semibold mb-4">Tambah {$menuName}</h3>
                     <form action="{{ route('orca_{$lowerName}.store') }}" method="POST" {$enctypeAttr}>

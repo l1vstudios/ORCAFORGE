@@ -8,9 +8,7 @@ use Illuminate\Support\Str;
 
 class OrcaModelController extends Controller
 {
-    /**
-     * Tampilkan daftar model yang ada di app/Models
-     */
+ 
     public function index(Request $request)
     {
         $path = app_path('Models');
@@ -26,7 +24,6 @@ class OrcaModelController extends Controller
             }
         }
 
-        // fitur pencarian
         $search = $request->input('search');
         if ($search) {
             $models = array_filter($models, fn($m) => Str::contains(strtolower($m), strtolower($search)));
@@ -35,9 +32,7 @@ class OrcaModelController extends Controller
         return view('orcaforge::components.orca_model.index', compact('models', 'search'));
     }
 
-    /**
-     * Hapus model dari folder Models
-     *///
+ 
     public function destroy($model)
     {
         $path = app_path("Models/{$model}.php");
