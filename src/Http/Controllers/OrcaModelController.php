@@ -37,7 +37,7 @@ class OrcaModelController extends Controller
 
     /**
      * Hapus model dari folder Models
-     */
+     *///
     public function destroy($model)
     {
         $path = app_path("Models/{$model}.php");
