@@ -1,0 +1,26 @@
+{
+  "name": "orcaforge/orcaforge",
+  "description": "orcaforge - CRUD Builder Otomatis & Page Builder Laravel 12 (Tailwind + Vite)",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nama Kamu",
+      "email": "email@mu.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Orcaforge\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Orcaforge\\Providers\\OrcaforgeServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
