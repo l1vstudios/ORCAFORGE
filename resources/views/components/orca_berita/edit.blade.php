@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('orcaforge::layouts.app')
 @section('title', 'Tambah Berita')
 @section('content')
 <div class="space-y-6">

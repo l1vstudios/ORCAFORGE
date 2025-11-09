@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('orcaforge::layouts.app')
 
 @section('title', 'Dashboard - CMS Builder')
 

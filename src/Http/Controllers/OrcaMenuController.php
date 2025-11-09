@@ -194,7 +194,7 @@ public function store(Request $request)
               }
         }
         $indexView = <<<BLADE
-              @extends('layouts.app')
+              @extends('orcaforge::layouts.app')
               @section('title', '{$menuName} - ORCAFORGE')
               @section('content')
               <div class="space-y-6">
@@ -368,7 +368,7 @@ public function store(Request $request)
         $enctypeAttr = $hasFileInput ? "enctype=\"multipart/form-data\"" : "";
 
         $createView = <<<BLADE
-            @extends('layouts.app')
+            @extends('orcaforge::layouts.app')
             @section('title', 'Tambah {$menuName}')
             @section('content')
             <div class="space-y-6">
