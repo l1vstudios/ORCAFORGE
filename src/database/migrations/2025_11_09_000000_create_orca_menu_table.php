@@ -8,6 +8,7 @@ return new class extends Migration
 {
     public function up(): void
     {
+        //SCHEMA ORCA MENU
         Schema::create('orca_menu', function (Blueprint $table) {
             $table->id();
             $table->string('nama_menu');
