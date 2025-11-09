@@ -16,6 +16,6 @@ class GenericExport implements FromView
 
     public function view(): View
     {
-        return view('exports.generic', ['data' => $this->data]);
+        return view('orcaforge::exports.generic', ['data' => $this->data]);
     }
 }

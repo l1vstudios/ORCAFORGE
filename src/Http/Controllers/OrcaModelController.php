@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Orcaforge\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -32,7 +32,7 @@ class OrcaModelController extends Controller
             $models = array_filter($models, fn($m) => Str::contains(strtolower($m), strtolower($search)));
         }
 
-        return view('components.orca_model.index', compact('models', 'search'));
+        return view('orcaforge::components.orca_model.index', compact('models', 'search'));
     }
 
     /**

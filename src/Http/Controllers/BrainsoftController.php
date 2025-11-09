@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Orcaforge\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -36,7 +36,7 @@ class BrainsoftController extends Controller
             ['path' => $request->url(), 'query' => $request->query()]
         );
 
-        return view('components.brainsoft_database.index', [
+        return view('orcaforge::components.brainsoft_database.index', [
             'tableNames' => $paginator,
             'search' => $search,
         ]);
@@ -89,7 +89,7 @@ class BrainsoftController extends Controller
             'BOOLEAN', 'ENUM', 'SET', 'BLOB', 'JSON'
         ];
 
-        return view('components.brainsoft_database.detail', compact('table', 'columns', 'types'));
+        return view('orcaforge::components.brainsoft_database.detail', compact('table', 'columns', 'types'));
     }
 
     public function updateTable(Request $request, $table)

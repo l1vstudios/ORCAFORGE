@@ -1,25 +1,25 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Orcaforge\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use App\Models\OrcaMenu;
+use Orcaforge\Models\OrcaMenu;
 
 class OrcaMenuController extends Controller
 {
     public function index()
     {
         $menus = OrcaMenu::latest()->paginate(10);
-        return view('components.orca_menu.index', compact('menus'));
+        return view('orcaforge::components.orca_menu.index', compact('menus'));
     }
 
     public function create()
     {
         $tables = DB::select('SHOW TABLES');
-        return view('components.orca_menu.create', compact('tables'));
+        return view('orcaforge::components.orca_menu.create', compact('tables'));
     }
 
 public function store(Request $request)
@@ -94,12 +94,12 @@ public function store(Request $request)
                     }
                 }
                 \$data = \$query->paginate(10);
-                return view('components.orca_{$lowerName}.index', compact('data'));
+                return view('orcaforge::components.orca_{$lowerName}.index', compact('data'));
             }
 
             public function create()
             {
-                return view('components.orca_{$lowerName}.create');
+                return view('orcaforge::components.orca_{$lowerName}.create');
             }
             public function store(Request \$request)
             {
@@ -120,7 +120,7 @@ public function store(Request $request)
             public function edit(\$id)
             {
                 \$item = {$menuName}::findOrFail(\$id);
-                return view('components.orca_{$lowerName}.edit', compact('item'));
+                return view('orcaforge::components.orca_{$lowerName}.edit', compact('item'));
             }
             public function update(Request \$request, \$id)
             {

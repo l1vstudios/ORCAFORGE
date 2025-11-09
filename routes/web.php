@@ -5,7 +5,6 @@ use Orcaforge\Http\Controllers\{
     OrcaMenuController,
     OrcaModelController,
     OrcaBaseController,
-    OrcaBeritaController,
     BrainsoftController
 };
 
@@ -21,5 +20,4 @@ Route::middleware(['web'])
         Route::get('/controllers', [OrcaBaseController::class, 'index'])->name('orcaforge_base.index');
         Route::delete('/controllers/{controller}', [OrcaBaseController::class, 'destroy'])->name('orcaforge_base.destroy');
 
-        Route::resource('/berita', OrcaBeritaController::class);
     });

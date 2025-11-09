@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Orcaforge\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -30,7 +30,7 @@ class OrcaBaseController extends Controller
 
         sort($controllers);
 
-        return view('components.orca_controller.index', compact('controllers', 'search'));
+        return view('orcaforge::components.orca_controller.index', compact('controllers', 'search'));
     }
 
     public function destroy($controller)
