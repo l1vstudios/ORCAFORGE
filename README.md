@@ -2,7 +2,7 @@
 ### **Make CRUD Faster, No Code Needed**
 
 **Orca Forge** adalah platform **CRUD Builder generasi baru** yang dirancang untuk mempercepat proses pengembangan aplikasi tanpa perlu menulis satu baris kode pun.  
-Dibandingkan dengan tool seperti *Filament* atau *Voyager*, **Orca Forge** hadir dengan kecerdasan otomatis yang mampu **membangun form, halaman, dan konfigurasi database secara instan** hanya dari input data yang Anda pilih.
+**Orca Forge** hadir dengan kecerdasan otomatis yang mampu **membangun form, halaman, dan konfigurasi database secara instan** hanya dari input data yang Anda pilih.
 
 Dengan teknologi **AI-driven automation**, Orca Forge tidak sekadar membangun CRUD — tapi **menciptakan sistem manajemen data yang siap pakai**, lengkap dengan preview dokumen otomatis, role & permission management, serta page builder berbasis **drag & drop**.
 
