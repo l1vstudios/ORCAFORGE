@@ -38,7 +38,7 @@
 
         <div id="sidebarWrapper"
             class="fixed md:static inset-y-0 left-0 z-40 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out">
-            @include('components.sidebar')
+            @include('orcaforge::components.sidebar')
         </div>
 
         <div id="mainContent">
