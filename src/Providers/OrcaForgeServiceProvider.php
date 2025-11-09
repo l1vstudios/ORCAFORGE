@@ -10,7 +10,16 @@ class OrcaForgeServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__ . '/../../routes/web.php');
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'orcaforge');
-        $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
+
+        $migrationPath = __DIR__ . '/../database/migrations';
+        if (is_dir($migrationPath)) {
+            $this->loadMigrationsFrom($migrationPath);
+
+            $this->publishes([
+                $migrationPath => database_path('migrations'),
+            ], 'orcaforge-migrations');
+        }
+
         $this->publishes([
             __DIR__ . '/../../resources/views' => resource_path('views/vendor/orcaforge'),
         ], 'orcaforge-views');
@@ -19,11 +28,6 @@ class OrcaForgeServiceProvider extends ServiceProvider
             __DIR__ . '/../../resources/css' => public_path('vendor/orcaforge/css'),
             __DIR__ . '/../../resources/js'  => public_path('vendor/orcaforge/js'),
         ], 'orcaforge-assets');
-        if (file_exists(__DIR__ . '/../../database/migrations')) {
-            $this->publishes([
-                __DIR__ . '/../../database/migrations' => database_path('migrations'),
-            ], 'orcaforge-migrations');
-        }
     }
     public function register(): void
     {
